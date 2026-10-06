@@ -1,5 +1,4 @@
-# truthfulness_classifier
-Binary truthfulness classifier for political/public statements
+# truthguard
 
 ## Description
 Binary truthfulness classifier for political/public statements. 

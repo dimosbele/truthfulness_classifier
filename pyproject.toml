@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "truthguard"
+version = "0.1.0"
+description = "Binary truthfulness classifier for political/public statements, with a minimal-modification (counterfactual) search."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Dimos Beleveslis", email = "d.beleveslis@gmail.com"},
+]
+keywords = ["nlp", "fact-checking", "misinformation", "classification", "lightgbm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "scikit-learn>=1.2",
+    "lightgbm>=4.0",
+    "scipy>=1.9",
+    "spacy>=3.7",
+    "en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl",
+    "nltk>=3.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
